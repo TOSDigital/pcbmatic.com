@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // JavaScript code for smooth scrolling
+        document.addEventListener('DOMContentLoaded', function() {
+          var smoothScrollTriggers = document.querySelectorAll('a[href^="#"]');
+          for (var i = 0; i < smoothScrollTriggers.length; i++) {
+            smoothScrollTriggers[i].addEventListener('click', function(e) {
+              e.preventDefault();
+              var href = this.getAttribute('href');
+              var targetElement = document.getElementById(href.replace('#', ''));
+              var rect = targetElement.getBoundingClientRect();
+              var offset = window.pageYOffset;
+              var targetPosition = rect.top + offset;
+              window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+              });
+            });
+          }
+        });
+      </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>PCBMatic - Home</title>
+</head>
+<body>
+    <section class="homescreen" id="home">
+        <div class="coverpic">
+            <img src="images/contact cover.jpg" alt="">
+        </div>
+        <nav>
+            <a href="index.html"><img class="navlogo" src="icons/PcbMatic-logo.png" alt=""></a>
+            <div class="navLinks" id="navLinks">
+                <img src="icons/close-menu-icon.svg" alt="" class="close" onclick="hideMenu()">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#aboutus">About Us</a></li>
+                    <li><a href="index.html#service">Services</a></li>
+                    <li><a href="index.html#products">products</a></li>
+                    <li><a href="capabilitymatrix.html">Capability Matrix</a></li>
+                    <li><a href="index.html#testimonials">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    
+                </ul> 
+            </div>
+            <img src="icons/open-menu-iocn.svg" alt="" class="open" onclick="openMenu()">
+        </nav>
+    </section>
+    <section class="aboutinner">
+        <h2>Contact</h2>
+        <div class="contactcardholder">
+            <div class="contactcard">
+                <img src="icons/contactwhite-02.png" alt="">
+                <a href="">+91 1234567890</a>
+            </div>
+            <div class="contactcard">
+                <img src="icons/contactwhite-04.png" alt="">
+                <a href="">email.com</a>
+            </div>
+            <div class="contactcard">
+                <img src="icons/contactwhite-03.png" alt="">
+                <a href="">+91 1234567890</a>
+            </div>
+            <div class="contactcard">
+                <img src="icons/contactwhite-01.png" alt="">
+                <a href="">Lorem Ipsum</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="copyright">
+        <p>Copyright © 2023 <b>PcbMatic</b>. All rights reserved. Design and Developed by<a href=""><b>The One Solution</b></a></p>
+    </div>
+
+
+
+
+    <script src="js/carousel.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/testimonial.js"></script>
+</body>
+</html>

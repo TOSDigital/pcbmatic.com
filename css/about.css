@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.coverpic{
+    width: 100%;
+    height: 400px;
+    overflow: none;
+}
+.coverpic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.aboutinner{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin: 2% 0% 2% 0%;
+}
+.aboutinner h2{
+    width: 90%;
+    margin: 2% 0% 2% 0%;
+    color: #00487C;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 500;
+}
+.aboutinnercontentholder{
+    width: 90%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.innercontent{
+    width: 50%;
+    display: grid;
+    align-items: start;
+    justify-items: center;
+}
+.innercontent p{
+    text-align: justify;
+    font-size: 18px;
+    color: #00487C;
+    margin: 0% 0% 4% 0%;
+    width: 90%;
+}
+.innerimageholder{
+    width: 50%;
+    overflow: none;
+}
+.innerimageholder img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.ourvalues{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin: 2% 0% 2% 0%;
+}
+.ourvalues h2{
+    width: 90%;
+    margin: 2% 0% 2% 0%;
+    color: #00487C;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 500;
+}
+.ourvaluescardholder{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+}
+.valuecard{
+    width: 28%;
+    height: 350px;
+    margin: 2%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background: #00487C;
+
+}
+.valuecard h3{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    width: 90%;
+    font-weight: 600;
+    margin: 2% 0% 2% 0%;
+}
+.valuecard h4{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    width: 90%;
+    margin: 0% 0% 2% 0%;
+}
+.valuecard p{
+    text-align: justify;
+    font-size: 18px;
+    color: white;
+    width: 90%;
+    margin: 5% 0% 4% 0%;
+}
+.contactcardholder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin-bottom: 2%;
+    flex-wrap: wrap;
+}
+.contactcard{
+    width: 30%;
+    height: 200px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background: #00487C;
+    margin: 1%;
+}
+.contactcard img{
+    width: 50px;
+    margin: 2% 0% 2% 0%;
+
+}
+.contactcard a{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    transition: .3s ease-in;
+    margin: 2% 0% 2% 0%;
+    text-decoration: none;
+}
+.capability{
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.capability h2{
+    width: 90%;
+    margin: 2% 0% 2% 0%;
+    color: #00487C;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 500;
+}
+.tableholder{
+    width: 90%;
+    overflow-x: scroll;
+    
+    
+}
+
+table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 16px;
+    width: 100%;
+    resize: both;
+}
+table thead tr{
+    background: #00487C;
+    color: #FFF;
+    font-weight: bold;
+    padding: 3%;
+    text-align: center;
+    height: 40px;
+}
+tr{
+    background: #E8E8E8;
+    border: 1px solid #00487C;
+}
+tr:nth-child(even){
+    background: white;
+}
+tr:last-child{
+    border-bottom: 10px solid #00487C;
+    
+}
+
+th, td{
+    padding: 12px;
+    height: 40px;
+    text-align: center;
+    overflow-x: auto;
+    resize: horizontal;
+    border: .25px solid #00487C;
+}
+
+@media (max-width: 500px){
+    .aboutinnercontentholder{
+        display: grid;
+        justify-items: center;
+    }
+    .innercontent{
+        width: 100%;
+        margin: 4% 0% 4% 0%;
+    }
+    .innercontent p{
+        width: 100%;
+    }
+    .innerimageholder{
+        width: 100%;
+        margin: 4% 0% 4% 0%;
+    }
+    .ourvaluescardholder{
+        flex-direction: column;
+    }
+    .valuecard{
+        width: 100%;
+        margin: 4% 0% 4% 0%;
+    }
+}
+@media (min-width: 501px) and (max-width: 864px){
+    .valuecard{
+        width: 45%;
+        height: 400px;
+    }
+}
+
+@media (min-width: 865px) and (max-width: 1280px){
+    .valuecard{
+        width: 45%;
+        height: 400px;
+    }
+}

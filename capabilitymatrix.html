@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // JavaScript code for smooth scrolling
+        document.addEventListener('DOMContentLoaded', function() {
+          var smoothScrollTriggers = document.querySelectorAll('a[href^="#"]');
+          for (var i = 0; i < smoothScrollTriggers.length; i++) {
+            smoothScrollTriggers[i].addEventListener('click', function(e) {
+              e.preventDefault();
+              var href = this.getAttribute('href');
+              var targetElement = document.getElementById(href.replace('#', ''));
+              var rect = targetElement.getBoundingClientRect();
+              var offset = window.pageYOffset;
+              var targetPosition = rect.top + offset;
+              window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+              });
+            });
+          }
+        });
+      </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>PCBMatic - Home</title>
+</head>
+<body>
+    <section class="homescreen" id="home">
+        <div class="coverpic">
+            <img src="images/contact cover.jpg" alt="">
+        </div>
+        <nav>
+            <a href="index.html"><img class="navlogo" src="icons/PcbMatic-logo.png" alt=""></a>
+            <div class="navLinks" id="navLinks">
+                <img src="icons/close-menu-icon.svg" alt="" class="close" onclick="hideMenu()">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#aboutus">About Us</a></li>
+                    <li><a href="index.html#service">Services</a></li>
+                    <li><a href="index.html#products">products</a></li>
+                    <li><a href="capabilitymatrix.html">Capability Matrix</a></li>
+                    <li><a href="index.html#testimonials">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    
+                </ul> 
+            </div>
+            <img src="icons/open-menu-iocn.svg" alt="" class="open" onclick="openMenu()">
+        </nav>
+    </section>
+    <section class="capability">
+        <h2>Capability Matrix</h2>
+        <div class="tableholder">
+            <table>
+                <thead>
+                    <tr>
+                        <td>Specifications</td>
+                        <td>Standard Technology</td>
+                        <td>Advanced Technology</td>
+                    </tr>
+                 </thead>
+                <tr>
+                    <td>Number of layers</td>
+                    <td>1-12</td>
+                    <td>14-42</td>
+                </tr>
+                <tr>
+                    <td>Board material</td>
+                    <td>Ventec VT-47</td>
+                    <td>Arlon Materials</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Isola FR408</td>
+                    <td>Megtron 6</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Iteq IT-180A</td>
+                    <td>Mitsui</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>DuPont Kapton</td>
+                    <td>FR408</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Rogers-4000 Series</td>
+                    <td>Getek</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Epoxy Adhesive Sysytem</td>
+                    <td>Nelco 4000 Series</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Dupont FR &amp; LF</td>
+                    <td>Rogers 3000 Series</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Acrylic Adhesive System </td>
+                    <td>Rogers 5000 Series</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>DuPont AP</td>
+                    <td>Rogers 6000 Series</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Adhesiveness System</td>
+                    <td>Hitachi Theta </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Taconic TLY</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Polimide</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Mitsubishi BT</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Berquest</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Cobratherm</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Flextherm</td>
+                </tr>
+                <tr>
+                    <td>Minimum Board Thickness</td>
+                    <td>&quot;2 Layer -0.010&quot;&quot;&quot;</td>
+                    <td>&quot;2 Layer -0.005&quot;&quot;&quot;</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>&quot;4 Layer -0.020&quot;&quot;&quot;</td>
+                    <td>&quot;4 Layer -0.010&quot;&quot;&quot;</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>&quot;6 Layer -0.040&quot;&quot;&quot;</td>
+                    <td>&quot;6 Layer -0.031&quot;&quot;&quot;</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>&quot;8 Layer -0.062&quot;&quot;&quot;</td>
+                    <td>&quot;8 Layer -0.040&quot;&quot;&quot;</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>&quot;10 Layer -0.062&quot;&quot;&quot;</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>&quot;12 Layer -0.062&quot;&quot;&quot;</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Maximum Board Thickness</td>
+                    <td>&quot;2 Layer -0.010&quot;&quot;&quot;</td>
+                    <td>&quot;0.250&quot;&quot; - 0.325&quot;&quot;&quot;</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>&quot;3-12 Layer -0.200&quot;&quot;&quot;</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Maximum Board Size</td>
+                    <td>&quot;16.5 &quot;&quot; x  22.5&quot;&quot;&quot;</td>
+                    <td>&quot;17.0&quot;&quot; x 23.0&quot;&quot;&quot;</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Layer Count Rigid</td>
+                    <td>18 Layers</td>
+                    <td>42 Layers</td>
+                </tr>
+                <tr>
+                    <td>Layer Count Flex</td>
+                    <td>6 Layers</td>
+                    <td>12 Layers</td>
+                </tr>
+                <tr>
+                    <td>Layer Count Rigid Flex</td>
+                    <td>10 Layers</td>
+                    <td>18 Layers</td>
+                </tr>
+                <tr>
+                    <td>Copper Thickness</td>
+                    <td>0.5 oz. - 3 oz.</td>
+                    <td>4 oz. - 7 oz.</td>
+                </tr>
+                <tr>
+                    <td>Hole Aspect Ratio</td>
+                    <td>10 : 1</td>
+                    <td>15 : 1</td>
+                </tr>
+                <tr>
+                    <td>Minimum Hole Size</td>
+                    <td>&quot;0.008&quot;&quot;&quot;</td>
+                    <td>&quot;0.005&quot;&quot;&quot;</td>
+                </tr>
+                <tr>
+                    <td>Mechanical Drill</td>
+                    <td>&quot;0.008&quot;&quot;&quot;</td>
+                    <td>&quot;0.005&quot;&quot;&quot;</td>
+                </tr>
+                <tr>
+                    <td>Laser Drill</td>
+                    <td>&quot;0.004&quot;&quot;&quot;</td>
+                    <td>&quot;0.003&quot;&quot;&quot;</td>
+                </tr>
+                <tr>
+                    <td>Minimum Trace / Space</td>
+                    <td>&quot;0.004&quot;&quot;/0.004&quot;&quot;&quot;</td>
+                    <td>&quot;0.002&quot;&quot;/0.002&quot;&quot;&quot;</td>
+                </tr>
+                <tr>
+                    <td>Minimum Drill-to-copper</td>
+                    <td>&quot;0.010&quot;&quot;&quot;</td>
+                    <td>&quot;0.003&quot;&quot;&quot;</td>
+                </tr>
+                <tr>
+                    <td>Minimum Pitch</td>
+                    <td>&quot;0.004&quot;&quot;&quot;</td>
+                    <td>&quot;0.002&quot;&quot;&quot;</td>
+                </tr>
+                <tr>
+                    <td>Final Finish</td>
+                    <td>HASL</td>
+                    <td>ENEPIG</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Lead Free HASL</td>
+                    <td>Wire Bondable Gold</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>ENIG</td>
+                    <td>Electroless Gold</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Hard Gold</td>
+                    <td>Selective Gold</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Gold fingers</td>
+                    <td>Immersion TIN</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Immersion Silver</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>OSP</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Solder Mask</td>
+                    <td>LPI:</td>
+                    <td>LPI:</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Green</td>
+                    <td>Yellow</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Black</td>
+                    <td>White</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Red</td>
+                    <td>Orange</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Blue</td>
+                    <td>Purple</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Clear</td>
+                    <td>Magenta</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Dry Film</td>
+                </tr>
+                <tr>
+                    <td>Coverlay</td>
+                    <td>FR Coverlay</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>LF coverlay</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Flexible Soldermask</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Silk Screen</td>
+                    <td>White </td>
+                    <td>Green</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Black</td>
+                    <td>Red</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Yellow</td>
+                    <td>Blue</td>
+                </tr>
+                <tr>
+                    <td>PCB Fabrication</td>
+                    <td>Scoring</td>
+                    <td>Jump Scoring</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Route</td>
+                    <td>Milling</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Laser Rout</td>
+                </tr>
+                <tr>
+                    <td>Additional Features</td>
+                    <td>Plated Slots</td>
+                    <td>Plated Edges</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Non-plated Slots</td>
+                    <td>Plated Milling</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Controlled delectric</td>
+                    <td>Plated Counter Bores &amp; Counter Sinks</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>covered Vias</td>
+                    <td>Edge Castellation</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Counter Sinks</td>
+                    <td>Controlled Impedance</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Counter Bores</td>
+                    <td>Silver Filled Vias</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Dual Access Flex</td>
+                    <td>Non-Conductive Filled Vias</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Book Binder Flex</td>
+                    <td>Copper Filled Vias</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Plated Half Holes with clean edges</td>
+                </tr>
+                <tr>
+                    <td>Quality</td>
+                    <td>IPC 6012 Class 1 &amp; 2</td>
+                    <td>IPC 6012 Class 3</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>IPC 6013 Class 1 &amp; 2</td>
+                    <td>IPC 6013 Class 3</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>ITAR</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>ISO 9001/2015</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>100% Netlist Testing</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>TDR Testing</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>X - Ray Fluorescence</td>
+                </tr>
+                <tr>
+                    <td>Special Technology</td>
+                    <td></td>
+                    <td>Blind &amp; Buried Vias</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Laser Drilled Vias</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Stacked micro Vias</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Copper Filled Vias</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Metal Backed Boards</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Rigid - Flex Boards</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Flex Boards</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Chip Modules</td>
+                </tr>
+                <tr>
+                    <td>Military Specification PCB</td>
+                    <td>Group A &amp; B certification</td>
+                    <td>MI-P-55110</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>MI-P-31032</td>
+                </tr>
+            </table>
+
+        </div>
+
+        
+        
+    </section>
+    <footer>
+        <div class="footerlogo">
+            <img src="images/footerlogo.png" alt="">
+        </div>
+        <div class="footercardholder">
+            <div class="footercard">
+                <img src="icons/call-icon.png" alt="">
+                <a href="">+91 1234567890</a>
+            </div>
+            <div class="footercard">
+                <img src="icons/emailicon.png" alt="">
+                <a href="">email.com</a>
+            </div>
+            <div class="footercard">
+                <img src="icons/whatsappicon.png" alt="">
+                <a href="">+91 1234567890</a>
+            </div>
+            <div class="footercard">
+                <img src="icons/location.png" alt="">
+                <a href="">Lorem Ipsum</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <p>Copyright © 2023 <b>PcbMatic</b>. All rights reserved. Design and Developed by<a href=""><b>The One Solution</b></a></p>
+    </div>
+
+
+
+
+    <script src="js/carousel.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/testimonial.js"></script>
+</body>
+</html>
