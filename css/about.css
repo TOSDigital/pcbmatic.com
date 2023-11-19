@@ -166,7 +166,7 @@ table{
     margin: 25px 0;
     font-size: 16px;
     width: 100%;
-    resize: both;
+    
 }
 table thead tr{
     background: #00487C;
@@ -193,7 +193,7 @@ th, td{
     height: 40px;
     text-align: center;
     overflow-x: auto;
-    resize: horizontal;
+    
     border: .25px solid #00487C;
 }
 
