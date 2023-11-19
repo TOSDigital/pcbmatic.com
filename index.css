@@ -53,15 +53,17 @@ ul li:hover::after{
 }
 .navlogo{
     width: 120px;
-    height: auto;
+    height: 100%;
     padding-left: 30px;
     margin-top: 7px;
 }
 .close{
     width: 15px;
+    height: 100%;
 }
 .open{
     width: 20px;
+    height: 100%;
 }
 .open{
     display: none;
@@ -591,6 +593,7 @@ ul li:hover::after{
 }
 .serviceiconholder img{
     width: 101px;
+    height: 100%;
     margin-top: 35%;
 }
 .servicecontentholder{
@@ -866,6 +869,7 @@ footer{
 
 .footerlogo{
     width: 100%;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -873,6 +877,7 @@ footer{
 }
 .footerlogo img{
     width: 350px;
+    height: 100%;
 }
 .footercardholder{
     display: flex;
@@ -893,6 +898,7 @@ footer{
 }
 .footercard img{
     width: 50px;
+    height: 100%;
     margin: 2% 0% 2% 0%;
 
 }
